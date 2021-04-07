@@ -1,6 +1,6 @@
 # Contributing
 
-We love to collaborate! To share ideas, ask interactive questions, or just brainstorm, feel free to reach out to [the maintainers](MAINTAINERS.md) on chat (Teams channel #xyz). For more formal questions and bugs, you might want to [open an issue](./issues). For more ambitious contributions (or if you just have a simple fix to offer), a pull request is probably best.
+We love to collaborate! To share ideas, ask interactive questions, or just brainstorm, feel free to reach out to [the maintainers](MAINTAINERS.md) on chat (Teams channel #xyz). For more formal questions and bugs, you might want to [open an issue](link to issues). For more ambitious contributions (or if you just have a simple fix to offer), a pull request is probably best.
 
 ## PR mechanics
 
@@ -11,7 +11,7 @@ We love to collaborate! To share ideas, ask interactive questions, or just brain
 4. Click "Commit Changes."
 
 ### Fancy way (for code)
-If a PR is substantial, you may want to socialize it ahead of time by [opening an issue](./issues). This will help you get early guidance from the team. It's also a good idea to review [the backlog](link to issues query for backlog), [the roadmap](link to roadmap doc), and our [component documentation](link to other docs) for context. Once you're confident of how to frame your contribution:
+If a PR is substantial, you may want to socialize it ahead of time by [opening an issue](link to issues). This will help you get early guidance from the team. It's also a good idea to review [the backlog](link to issues query for backlog), [the roadmap](link to roadmap doc), and our [component documentation](link to other docs) for context. Once you're confident of how to frame your contribution:
 
 1. Clone the repo (forking is disabled; you must make a direct clone).
 2. Create a local branch named according to your contribution (e.g., `fixdiagram` or `add-revocation-feature`)
