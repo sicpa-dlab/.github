@@ -1,0 +1,16 @@
+name: "Sync issues to Digital Lab roadmap project"
+
+on:
+  issues:
+    types: [opened]
+jobs:
+  sync-issues:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create or Update Project Card
+        uses: sicpa-dlab/create-or-update-project-card@v1
+        with:
+          token: ${{ secrets.ORG_TOKEN }}
+          project-location: sicpa-dlab
+          project-name: Building Blocks
+          column-name: This quarter
