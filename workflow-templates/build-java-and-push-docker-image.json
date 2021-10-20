@@ -1,0 +1,5 @@
+{
+    "name": "Build Java with Maven and push Docker image",
+    "description": "Build Java Application with Maven. Build Docker image and push to Github docker repository",
+    "iconName": "build-java-and-push-docker-image"
+}
