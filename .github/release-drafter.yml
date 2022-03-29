@@ -1,0 +1,49 @@
+#
+# Default release drafter template.
+# It will be picked up automatically by all repositories under this organization,
+# unless they define their own .github/release-drafter.yml
+#
+# Note that it is also possible to extend this template, using:
+#   extends: .github
+#   ... overrides ...
+#
+# See https://probot.github.io/docs/best-practices/#store-configuration-in-the-repository
+# and https://github.com/release-drafter/release-drafter for more info
+#
+name-template: 'DRAFT'
+tag-template: 'DRAFT'
+categories:
+  - title: '🚀 Features'
+    labels:
+      - 'type: feature :new:'
+      - 'type: improvement :+1:'
+      - 'type: epic'
+  - title: '🐛 Bug Fixes'
+    labels:
+      - 'type: bug :bug:'
+  - title: '🛠 Other'
+    labels:
+      - 'type: chore :yawning_face:'
+      - 'type: task'
+  - title: '📖 Documentation'
+    label: 'type: RFC :speech_balloon:'
+  - title: 'Security issue'
+    label: 'type: security issue :warning:'
+exclude-labels:
+  - 'skip-changelog'
+change-template: '- $TITLE (PR: #$NUMBER) $AUTHOR'
+change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
+version-resolver:
+  major:
+    labels:
+      - 'major'
+  minor:
+    labels:
+      - 'minor'
+  patch:
+    labels:
+      - 'patch'
+  default: patch
+template: |
+  ## Changes
+  $CHANGES
